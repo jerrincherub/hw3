@@ -16,11 +16,12 @@ function Thecalculator(){
         setB(b+1)
     }
     function handlenumber1(event){
+        console.log(event.target.value)
         var c=parseInt(event.target.value)
         setA(c)
     }
     function handlenumber2(event){
-        var d=parseInt(target.event.value)
+        var d=parseInt(event.target.value)
         setB(d)
     }
     function sum(num1,num2){
@@ -39,14 +40,16 @@ function Thecalculator(){
     return(
         <div>
            The Calculator 
-           <input value={a}
+           <input
+           // value={a}
            onChange={handlenumber1}
            />
         
-           <button onClick={Increasecounta}>
+          = <button onClick={Increasecounta}>
             number1
             </button>
-            <input value={b}
+            <input 
+            // value={b}
             onChange={handlenumber2}
             />
             <button 
