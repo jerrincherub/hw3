@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 export default function Stylebackground() {
-  const [backgroundColor,setbackgroundColor]=useState('');
+  const [backgroundColor,setBackgroundColor]=useState('');
   return (
       <div
         style={{
-          backgroundColor: "#backgroundColor",
+          backgroundColor: backgroundColor,
           padding: 10,
           margin: 20,
           color: "#00ffff",
@@ -19,7 +19,7 @@ export default function Stylebackground() {
           placeholder="enter color..."
 
           onChange={(event) => {
-            setbackgroundColor(event.target.value);
+            setBackgroundColor(event.target.value);
             <button 
             onClick={backgroundColor}>
            change color

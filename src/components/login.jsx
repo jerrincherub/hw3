@@ -4,16 +4,17 @@ export default function Login()
 {
     const [email,setEmail]=useState('');
     const [password,setPassword]=useState('');
+    const [msg,setMessage]=useState("Hello world");
   
    
     
     function onButtonClick(){
-        if(email='  '){
-            console.log("enter email")
+        if(email=='jerrin@gmail' && password.length>8){
+            
+            setMessage("Login successfull")
         }
-    
-        if( password>8){
-            console.log("Login successfull")
+        else{
+            setMessage("login not successful")
         }
     
     }
@@ -47,8 +48,11 @@ export default function Login()
         <br/>
         
         <button onClick={onButtonClick}> 
+           
             Login
         </button>
+        {msg}
+
         </div>
 )
 }
