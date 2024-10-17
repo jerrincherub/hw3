@@ -10,12 +10,16 @@ import './index.css'
 //import Logoperation from"./components/log.jsx"
 //import Loginbackground from './components/home.jsx';
 import Logcolor from "./components/in.jsx";
+import Slider from "./components/slider.jsx"
+import Redslider from "./components/redslide.jsx"
+import Calc from "./components/calc.jsx"
+//import Co from './components/co.jsx';
 
 
 
 createRoot(document.getElementById('root')).render(
  <StrictMode>
-    < Logcolor/>
+    < Calc/>
    
  </StrictMode>,
 )

@@ -15,7 +15,7 @@ export default function Logcolor()
             setBackgroundColor("#00ff00")
     }
     function logOut(){
-        setOut("Logout is successful")
+        setMessage("Logout is successful")
         setBackgroundColor("#ff0000")
 
     }
@@ -26,7 +26,7 @@ export default function Logcolor()
             backgroundColor: backgroundColor,
             padding: 10,
             margin: 20,
-            color: "#00ffff",
+            color: "#0000ff",
             height: "100vh",
           }}
         >
@@ -43,7 +43,6 @@ export default function Logcolor()
             
             
         </button>
-        {out}
         </div>
     
 )
