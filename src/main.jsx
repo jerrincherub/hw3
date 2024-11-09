@@ -33,13 +33,13 @@ import UpDown from './components/arrayupdown.jsx';
 import StyleUpDown from './components/updownstyle.jsx';
 import Flightbooking from './components/flightbooking.jsx';
 import Fetcher from './components/fetchapi.jsx';
-import FetchData from './components/fetchdataapi.jsx';
-
+import Apidata from './components/fetchdataapi.jsx';
+import LoginPageApi from './components/apiloginpage.jsx';
 
 
 createRoot(document.getElementById('root')).render(
- //<StrictMode>
-    <FetchData/>
+ <StrictMode>
+    <LoginPageApi/>
    
-  // </StrictMode>,
+   </StrictMode>,
 )
