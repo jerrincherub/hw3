@@ -1,0 +1,13 @@
+.card {
+    box-shadow: 0 4px 8px 0;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+.title{
+    font-size: 18px;
+}
+    
+      .container {
+        padding: 2px 16px;
+      }
