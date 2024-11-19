@@ -20,22 +20,21 @@ export default function LoginPageApi() {
             },
             body: JSON.stringify({ email: email, password: password }),
         })
-            .then((res) =>res.json())
+            .then((res) => res.json())
             .then((resJson) => {
-              console.log(resJson)
-            
-         if(resJson.token)
-         {
-            setIsSucess("true")
-            setMessage("Login successful")
-         }
-         else{
-            setIsSucess("false")
-            setMessage("Login not successfull invalid credentials")
-         }
-        })
+                console.log(resJson)
 
-      
+                if (resJson.token) {
+                    setIsSucess("true")
+                    setMessage("Login successful")
+                }
+                else {
+                    setIsSucess("false")
+                    setMessage("Login not successfull invalid credentials")
+                }
+            })
+
+
     }
 
 
@@ -127,34 +126,34 @@ export default function LoginPageApi() {
                         />
                         <div>
 
-                            <button disabled={(email.length==0? true: false)}
-                            style={{
-                                border: "1px solid black",
-                                color: "white",
-                                width: 400,
-                                height: 50,
-                                padding: 5,
-                                borderRadius: 10,
-                                marginLeft: 50,
-                                backgroundColor: "#8F00FF"
-                            }}
+                            <button disabled={(email.length == 0 ? true : false)}
+                                style={{
+                                    border: "1px solid black",
+                                    color: "white",
+                                    width: 400,
+                                    height: 50,
+                                    padding: 5,
+                                    borderRadius: 10,
+                                    marginLeft: 50,
+                                    backgroundColor: "#8F00FF"
+                                }}
                                 onClick={handleSubmit}>
 
                                 Login
                             </button>
                         </div>
-                        
+
                         {message && (
-        <div
-          style={{
-            color: issucess ? 'green' : 'red',
-            marginTop: '10px',
-            fontWeight: 'bold',
-          }}
-        >
-          {message}
-        </div>
-      )}
+                            <div
+                                style={{
+                                    color: issucess ? 'green' : 'red',
+                                    marginTop: '10px',
+                                    fontWeight: 'bold',
+                                }}
+                            >
+                                {message}
+                            </div>
+                        )}
                         <div style={{
                             padding: 5,
                             margin: 5,

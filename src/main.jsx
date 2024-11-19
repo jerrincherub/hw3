@@ -35,13 +35,31 @@ import Flightbooking from './components/flightbooking.jsx';
 import Fetcher from './components/fetchapi.jsx';
 import Apidata from './components/fetchdataapi.jsx';
 import LoginPageApi from './components/apiloginpage.jsx';
+import ContactForm from './components/Homework/calculator/practiseproblem/contactform.jsx';
+import Form from './components/Homework/calculator/practiseproblem/form.jsx';
+import Cal from './components/Homework/calculator/practiseproblem/calt.jsx';
+import Mortgage from './components/Homework/calculator/practiseproblem/mortgagecalculator.jsx'; 
+import DiceRoller from './components/Homework/calculator/practiseproblem/diceroller.jsx';
+import Bg from './components/Homework/calculator/practiseproblem/backgroundchange.jsx';
+import Log from './components/Homework/calculator/practiseproblem/logcolor.jsx';
+import ColorSlider from './components/Homework/calculator/practiseproblem/colorslider.jsx';
+import TodoList from './components/Homework/calculator/practiseproblem/todolist.jsx';
+import ArrayFn from './components/Homework/calculator/practiseproblem/arrayop.jsx';
+import TrafficLight from './components/Homework/calculator/practiseproblem/trafficlight.jsx';
+import TempConverter from './components/Homework/calculator/practiseproblem/temperatureconverter.jsx';
+import Data from './components/Homework/calculator/practiseproblem/apifetch.jsx';
 
 
+import Fetch from './components/Homework/calculator/practiseproblem/apilogin.jsx';
+import Book from './components/Homework/calculator/practiseproblem/book.jsx';
+import UpArray from './components/Homework/calculator/practiseproblem/arrayup.jsx';
+import SearchApi from './components/Homework/calculator/practiseproblem/test.jsx';
+import Search from './components/Homework/calculator/practiseproblem/searchapi.jsx';
 
 
 createRoot(document.getElementById('root')).render(
- <StrictMode>
-    <LoginPageApi/>
+<StrictMode>
+    <Search/>
    
-   </StrictMode>,
+</StrictMode>,
 )
